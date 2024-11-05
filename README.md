@@ -122,13 +122,15 @@ If you have any questions, search for answers under [Discussions](https://github
 - External display hardware backlight control and volume control require DDC capable, natively connected display or an Apple display. Some docks and dongles may not support DDC. All built-in ports of all Macs that can run the app are supported for DDC communication.
 - The app is compatible with headless Macs to create custom virtual screen resolutions for remote access.
 
-## Discord Channel
-
-You can join the discussion on the [BetterDisplay Discord channel](https://discord.gg/aKe5yCWXSp). If you have any issues or questions, don't hesitate to ask!
-
 ## Localization
 
 The app supports localization. Special thanks to everybody who has contributed and is contributing to the localization effort!
 
 [Check out the current localization status and on how to contribute…](https://github.com/waydabber/BetterDisplay/discussions/2165)
+
+## Contact & Discord Channel
+
+Join the discussion on the [BetterDisplay Discord channel](https://discord.gg/aKe5yCWXSp). If you have any issues or questions, don't hesitate to ask!
+
+The app is being developed by @waydabber at [Kodeon Software](https://kodeonsoftware.com). The app's reseller is Paddle - regarding purchase related issues, please contact [Paddle Support](https://www.paddle.com). The best way to directly contact the developer is through the app's [Discord channel](https://discord.gg/aKe5yCWXSp) which is actively monitored. Alternatively you can send an email to <span>info<i>&#64;</i>kodeon</span>software<i>&#46;</i><span>com</span>.
 

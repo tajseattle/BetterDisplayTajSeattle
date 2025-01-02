@@ -132,5 +132,4 @@ The app supports localization. Special thanks to everybody who has contributed a
 
 Join the discussion on the [BetterDisplay Discord channel](https://discord.gg/aKe5yCWXSp). If you have any issues or questions, don't hesitate to ask!
 
-The app is being developed by [@waydabber](https://github.com/waydabber) at [Kodeon Software](https://kodeonsoftware.com). The app's reseller is Paddle - regarding purchase related issues, please contact [Paddle Support](https://www.paddle.com). The best way to directly contact the developer is through the app's [Discord channel](https://discord.gg/aKe5yCWXSp) which is actively monitored. Alternatively you can send an email to <span>info<i>&#64;</i>kodeon</span>software<i>&#46;</i><span>com</span>.
-
+The app is being developed by [@waydabber](https://github.com/waydabber) at [Kodeon Software](https://kodeonsoftware.com). The app's reseller is Paddle - regarding purchase related issues, please contact [Paddle Support](https://www.paddle.com). The best way **to get technical help or directly contact the developer is through the app's [Discord channel](https://discord.gg/aKe5yCWXSp)**. Alternatively you can send an email to <span>info<i>&#64;</i>kodeon</span>software<i>&#46;</i><span>com</span> - but this contact is strictly for licensing related issues (tech help is available via Discord).

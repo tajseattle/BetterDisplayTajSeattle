@@ -3,7 +3,7 @@
 
 <h2>BetterDisplay Pro</h2>
 <p>Custom Resolutions, XDR/HDR Extra Brightness, Virtual Screens, Picture in Picture, Soft-Disconnect, Configuration and EDID overrides, DDC Control, Color Mode Selection, Syncing, Layout Protection and More!</p>
-<a href="https://github.com/waydabber/BetterDisplay/releases/download/v3.4.1/BetterDisplay-v3.4.1.dmg"><img src="https://user-images.githubusercontent.com/37590873/219133640-8b7a0179-20a7-4e02-8887-fbbd2eaad64b.png" width="180" alt="Download for macOS"/></a><br/>
+<a href="https://github.com/waydabber/BetterDisplay/releases/download/v3.5.3/BetterDisplay-v3.5.3.dmg"><img src="https://user-images.githubusercontent.com/37590873/219133640-8b7a0179-20a7-4e02-8887-fbbd2eaad64b.png" width="180" alt="Download for macOS"/></a><br/>
 <sub><b>The <a href="https://github.com/waydabber/BetterDisplay/releases">latest app version</a> requires macOS Ventura, Sonoma or Sequoia.<br>
 Legacy versions: </b>macOS Monterey - <a href="https://github.com/waydabber/BetterDisplay/releases/download/v2.3.9/BetterDisplay-v2.3.9.dmg">v2.3.9</a>, Mojave, Catalina, Big Sur - <a href="https://github.com/waydabber/BetterDisplay/releases/download/v1.4.15/BetterDisplay-v1.4.15.dmg">v1.4.15</a>.</sub>
 </div>
@@ -27,6 +27,9 @@ Legacy versions: </b>macOS Monterey - <a href="https://github.com/waydabber/Bett
 
 ## Key Features
 
+- **NEW:** Video filters for PIP and local streaming. *
+- **NEW:** Apply filters directly to your screen using self-streaming and video filter windows. *
+- **NEW:** Control integration - control your device using shell scripts and URLs. *
 - Color mode selector and unexposed refresh rates for Apple Silicon Macs** - change RGB, YCbCr, chroma subsampling, HDMI range settings.
 - [Reach the full brightness potential of your XDR or HDR display](https://github.com/waydabber/BetterDisplay/wiki/XDR-and-HDR-brightness-upscaling) - XDR brightness upscale to 1600 nits, external HDR display brightness upscale depending on the display's capability. Native XDR, color table (Apple Silicon) and Metal (Apple Silicon and Intel) methods are all supported. *
 - [Native brightness upscaling for Apple XDR displays](https://github.com/waydabber/BetterDisplay/wiki/XDR-and-HDR-brightness-upscaling#enablingdisabling-hardware-native-xdr-upscaling-apple-silicon-intel-requires-apple-xdr-display) (built-in) - provides full unlock for the entire brightness range with no strings attached - no clipped or overblown HDR videos, full native sliders compatibility, no extra CPU/GPU usage. *

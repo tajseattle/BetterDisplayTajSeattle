@@ -104,7 +104,10 @@ Install the app using one of the following methods:
 
 ### Homebrew
 1. Install [Homebrew](https://brew.sh/)
-1. Run `brew install --cask betterdisplay`
+1. Run:
+```bash
+brew install --cask betterdisplay
+```
    
 ## Using the App
 

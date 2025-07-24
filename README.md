@@ -1,11 +1,11 @@
 <div align="center">
-<a href="https://github.com/waydabber/BetterDisplay/releases"><img src="https://github.com/waydabber/BetterDisplay/assets/37590873/c9eaae81-78b8-4bd7-aeea-0ec445f1b0ea" width="280" alt="BetterDisplay" align="center"/></a>
+<a href="https://github.com/waydabber/BetterDisplay/releases"><img src="https://github.com/user-attachments/assets/3a3e7683-1bfc-4ba1-9a91-4a458488899f" width="290" alt="BetterDisplay" align="center"/></a>
 
 <h2>BetterDisplay Pro</h2>
 <p>Custom Resolutions, XDR/HDR Extra Brightness, Virtual Screens, Picture in Picture, Soft-Disconnect, Configuration and EDID overrides, DDC Control, Color Mode Selection, Syncing, Layout Protection and More!</p>
 <a href="https://github.com/waydabber/BetterDisplay/releases/download/v3.5.6/BetterDisplay-v3.5.6.dmg"><img src="https://user-images.githubusercontent.com/37590873/219133640-8b7a0179-20a7-4e02-8887-fbbd2eaad64b.png" width="180" alt="Download for macOS"/></a><br/>
 <sub><b>The <a href="https://github.com/waydabber/BetterDisplay/releases">latest app version</a> requires macOS Ventura, Sonoma or Sequoia.</b><br>
-<b>macOS Tahoe 26 beta</b> - upgrade to the <a href="https://github.com/waydabber/BetterDisplay#compatibility">current internal pre-release version inside the app</a>.<br>
+<b>macOS Tahoe 26 beta</b> - upgrade to the <a href="https://github.com/waydabber/BetterDisplay#compatibility">current pre-release version inside the app</a>.<br>
 <b>Legacy versions:</b> macOS Monterey - <a href="https://github.com/waydabber/BetterDisplay/releases/download/v2.3.9/BetterDisplay-v2.3.9.dmg">v2.3.9</a>, Mojave, Catalina, Big Sur - <a href="https://github.com/waydabber/BetterDisplay/releases/download/v1.4.15/BetterDisplay-v1.4.15.dmg">v1.4.15</a>.</sub>
 </div>
 
@@ -23,7 +23,7 @@
 **BetterDisplay** is a truly wonderful tool! It lets you convert your displays to **fully scalable screens**, manage **display configuration overrides**, allows **brightness and color control**, provides **XDR/HDR brightness upscaling** (extra brightness beyond 100% for compatible XDR or HDR displays on Apple Silicon and Intel Macs - multiple methods available), **full dimming** to black, helps you **create and manage virtual screens** for your Mac, create **Picture in Picture** windows of your displays and gives you a host of other features to **manage your display's settings** like display and color mode easily from the menu bar. It can even **disconnect/reconnect displays** on-the-fly!
 
 <div align="center">
-<img width="832" src="https://github.com/user-attachments/assets/0eaa18bf-d377-4ac2-ad81-b6dcd6abd158">
+<img width="832" src="https://github.com/user-attachments/assets/cc9cf8b1-9fbd-44c3-bdc3-bb44f9e114c5" />
 </div>
 
 ## Key Features

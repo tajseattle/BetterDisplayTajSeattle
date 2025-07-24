@@ -5,7 +5,7 @@
 <p>Custom Resolutions, XDR/HDR Extra Brightness, Virtual Screens, Picture in Picture, Soft-Disconnect, Configuration and EDID overrides, DDC Control, Color Mode Selection, Syncing, Layout Protection and More!</p>
 <a href="https://github.com/waydabber/BetterDisplay/releases/download/v3.5.6/BetterDisplay-v3.5.6.dmg"><img src="https://user-images.githubusercontent.com/37590873/219133640-8b7a0179-20a7-4e02-8887-fbbd2eaad64b.png" width="180" alt="Download for macOS"/></a><br/>
 <sub><b>The <a href="https://github.com/waydabber/BetterDisplay/releases">latest app version</a> requires macOS Ventura, Sonoma or Sequoia.</b><br>
-<b>macOS Tahoe 26 beta</b> - upgrade to the <a href="https://github.com/waydabber/BetterDisplay#compatibility">current pre-release version inside the app</a>.<br>
+<b>macOS Tahoe 26 beta</b> - Download the latest <a href="https://github.com/waydabber/BetterDisplay/releases">v4.x pre-release version</a> or enable pre-release updates in-app</a>!<br>
 <b>Legacy versions:</b> macOS Monterey - <a href="https://github.com/waydabber/BetterDisplay/releases/download/v2.3.9/BetterDisplay-v2.3.9.dmg">v2.3.9</a>, Mojave, Catalina, Big Sur - <a href="https://github.com/waydabber/BetterDisplay/releases/download/v1.4.15/BetterDisplay-v1.4.15.dmg">v1.4.15</a>.</sub>
 </div>
 
@@ -28,9 +28,10 @@
 
 ## Key Features
 
-- **NEW:** Video filters for PIP and local streaming. *
-- **NEW:** Apply filters directly to your screen using self-streaming and video filter windows. *
-- **NEW:** Control integration - control your device using shell scripts and URLs. *
+- **NEW:** Full support for macOS Tahoe 26 - [get the latest v4.x pre-release version!](https://github.com/waydabber/BetterDisplay/releases)!
+- Video filters for PIP and local streaming. *
+- Apply filters directly to your screen using self-streaming and video filter windows. *
+- Control integration - control your device using shell scripts and URLs. *
 - Color mode selector and unexposed refresh rates for Apple Silicon Macs** - change RGB, YCbCr, chroma subsampling, HDMI range settings.
 - [Reach the full brightness potential of your XDR or HDR display](https://github.com/waydabber/BetterDisplay/wiki/XDR-and-HDR-brightness-upscaling) - XDR brightness upscale to 1600 nits, external HDR display brightness upscale depending on the display's capability. Native XDR, color table (Apple Silicon) and Metal (Apple Silicon and Intel) methods are all supported. *
 - [Native brightness upscaling for Apple XDR displays](https://github.com/waydabber/BetterDisplay/wiki/XDR-and-HDR-brightness-upscaling#enablingdisabling-hardware-native-xdr-upscaling-apple-silicon-intel-requires-apple-xdr-display) (built-in) - provides full unlock for the entire brightness range with no strings attached - no clipped or overblown HDR videos, full native sliders compatibility, no extra CPU/GPU usage. *
@@ -118,11 +119,9 @@ If you have any questions, search for answers under [Discussions](https://github
 ## Compatibility
 
 > [!NOTE] 
-> **About macOS Tahoe 26 compatibility:** Although the latest stable app is mostly compatible with Tahoe (some settings require adjustment), **an updated version of the app—with enhanced compatibility and refreshed visuals—is already in available as an internal pre-release update**. Tahoe beta users are encouraged to upgrade to this version!
+> **Use the latest v4.x pre-release for full macOS Tahoe 26 support:** an updated version of the app—with enhanced compatibility and refreshed visuals—is already in [available as a pre-release](https://github.com/waydabber/BetterDisplay/releases). Tahoe beta users are encouraged to upgrade to this version!
 >
-> To get the latest internal pre-release, please enable **Settings > Application > Updates > Receive pre-release updates** and **Receive internal pre-release updates**.
->
-> For further details about Tahoe compatibility, see [this discussion](https://github.com/waydabber/BetterDisplay/discussions/4418).
+> To get the latest pre-release, please enable **Settings > Application > Updates > Receive pre-release updates**.
 
 - The latest v3.x version of the app is compatible with all **Apple Silicon** and **Intel** Macs running macOS **Sequoia**, **Sonoma**, **Ventura** (13.2 or newer).
 - The latest stable v2.x version of the app supports macOS **Sonoma**, **Ventura** and **Monterey** (12.4 or newer).

@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/waydabber/BetterDisplay/releases"><img src="https://github.com/user-attachments/assets/3a3e7683-1bfc-4ba1-9a91-4a458488899f" width="290" alt="BetterDisplay" align="center"/></a>
+<a href="https://github.com/waydabber/BetterDisplay/releases"><img src="https://github.com/user-attachments/assets/3a3e7683-1bfc-4ba1-9a91-4a458488899f" width="290" height="290" alt="BetterDisplay" align="center"/></a>
 
 <h2>BetterDisplay Pro</h2>
 <p>Custom Resolutions, XDR/HDR Extra Brightness, Virtual Screens, Picture in Picture, Soft-Disconnect, Configuration and EDID overrides, DDC Control, Color Mode Selection, Syncing, Layout Protection and More!</p>

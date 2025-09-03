@@ -123,9 +123,9 @@ If you have any questions, search for answers under [Discussions](https://github
 ## Compatibility
 
 > [!NOTE] 
-> **Use the latest v4.x pre-release for full macOS Tahoe 26 support:** an updated version of the app—with enhanced compatibility and refreshed visuals—is [available as a pre-release](https://github.com/waydabber/BetterDisplay/releases). Tahoe beta users should upgrade to this version!
+> **Use the latest v4.x app version for full macOS Tahoe 26 support:** an updated version of the app—with enhanced compatibility and refreshed visuals—is [available](https://github.com/waydabber/BetterDisplay/releases). Tahoe users should upgrade to this version!
 >
-> If you already have the app installed, enable **Settings > Application > Updates > Receive pre-release updates** and then check for updates to get the latest pre-release.
+> If you already have the app installed, enable **Settings > Application > Updates > Receive pre-release updates** and then check for updates to get the latest v4.x version.
 
 - The latest v3.x version of the app is compatible with all **Apple Silicon** and **Intel** Macs running macOS **Sequoia**, **Sonoma**, **Ventura** (13.2 or newer).
 - The latest stable v2.x version of the app supports macOS **Sonoma**, **Ventura** and **Monterey** (12.4 or newer).

@@ -7,7 +7,7 @@
 <sub>
 <b>macOS Tahoe 26</b> - Get the latest <a href="https://github.com/waydabber/BetterDisplay/releases/download/v4.0.4/BetterDisplay-v4.0.4.dmg">v4.x pre-release</a>. Also compatible with macOS Ventura, Sonoma, Sequoia.<br>
 <b>Legacy versions:</b> macOS Monterey - <a href="https://github.com/waydabber/BetterDisplay/releases/download/v2.3.9/BetterDisplay-v2.3.9.dmg">v2.3.9</a>. macOS Mojave, Catalina, Big Sur - <a href="https://github.com/waydabber/BetterDisplay/releases/download/v1.4.15/BetterDisplay-v1.4.15.dmg">v1.4.15</a>.<br>
-The <a href="https://github.com/waydabber/BetterDisplay/releases/download/v3.5.6/BetterDisplay-v3.5.6.dmg">current v3.x stable version</a> requires macOS Ventura, Sonoma or Sequoia.
+<a href="https://github.com/waydabber/BetterDisplay/releases/download/v3.5.6/BetterDisplay-v3.5.6.dmg">The last v3.x stable version</a> - requires macOS Ventura, Sonoma or Sequoia | <a href="https://github.com/waydabber/BetterDisplay/releases">Browse all releases</a><br>
 </sub>
 </div>
 

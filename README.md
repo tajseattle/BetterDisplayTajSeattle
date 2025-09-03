@@ -5,7 +5,7 @@
 <p>Custom Resolutions, XDR/HDR Extra Brightness, Virtual Screens, Picture in Picture, Soft-Disconnect, Configuration and EDID overrides, DDC Control, Color Mode Selection, Syncing, Layout Protection and More!</p>
 <a href="https://github.com/waydabber/BetterDisplay/releases/download/v4.0.4/BetterDisplay-v4.0.4.dmg"><img src="https://user-images.githubusercontent.com/37590873/219133640-8b7a0179-20a7-4e02-8887-fbbd2eaad64b.png" width="180" alt="Download for macOS"/></a><br/>
 <sub>
-<b>macOS Tahoe 26 beta</b> - Get the latest <a href="https://github.com/waydabber/BetterDisplay/releases/download/v4.0.4/BetterDisplay-v4.0.4.dmg">v4.x pre-release</a>. Also compatible with macOS Ventura, Sonoma, Sequoia.<br>
+<b>macOS Tahoe 26</b> - Get the latest <a href="https://github.com/waydabber/BetterDisplay/releases/download/v4.0.4/BetterDisplay-v4.0.4.dmg">v4.x pre-release</a>. Also compatible with macOS Ventura, Sonoma, Sequoia.<br>
 <b>Legacy versions:</b> macOS Monterey - <a href="https://github.com/waydabber/BetterDisplay/releases/download/v2.3.9/BetterDisplay-v2.3.9.dmg">v2.3.9</a>. macOS Mojave, Catalina, Big Sur - <a href="https://github.com/waydabber/BetterDisplay/releases/download/v1.4.15/BetterDisplay-v1.4.15.dmg">v1.4.15</a>.<br>
 The <a href="https://github.com/waydabber/BetterDisplay/releases/download/v3.5.6/BetterDisplay-v3.5.6.dmg">current v3.x stable version</a> requires macOS Ventura, Sonoma or Sequoia.
 </sub>

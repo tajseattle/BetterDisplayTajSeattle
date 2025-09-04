@@ -32,7 +32,7 @@ Previous versions: <a href="https://github.com/waydabber/BetterDisplay/releases/
 
 ## Key Features
 
-- **NEW:** Full support for macOS Tahoe 26 - [get the latest v4.x pre-release version!](https://github.com/waydabber/BetterDisplay/releases)!
+- **NEW:** Full support for macOS Tahoe 26 - [get the latest v4.x release!](https://github.com/waydabber/BetterDisplay/releases)!
 - Video filters for PIP and local streaming. *
 - Apply filters directly to your screen using self-streaming and video filter windows. *
 - Control integration - control your device using shell scripts and URLs. *

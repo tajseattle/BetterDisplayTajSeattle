@@ -32,22 +32,22 @@ Previous versions: <a href="https://github.com/waydabber/BetterDisplay/releases/
 
 ## Key Features
 
-- **NEW:** Full support for macOS Tahoe 26
-- Video filters for PIP and local streaming. *
-- Apply filters directly to your screen using self-streaming and video filter windows. *
-- Control integration - control your device using shell scripts and URLs. *
-- Color mode selector and unexposed refresh rates for Apple Silicon Macs** - change RGB, YCbCr, chroma subsampling, HDMI range settings.
 - [Reach the full brightness potential of your XDR or HDR display](https://github.com/waydabber/BetterDisplay/wiki/XDR-and-HDR-brightness-upscaling) - XDR brightness upscale to 1600 nits, external HDR display brightness upscale depending on the display's capability. Native XDR, color table (Apple Silicon) and Metal (Apple Silicon and Intel) methods are all supported. *
 - [Native brightness upscaling for Apple XDR displays](https://github.com/waydabber/BetterDisplay/wiki/XDR-and-HDR-brightness-upscaling#enablingdisabling-hardware-native-xdr-upscaling-apple-silicon-intel-requires-apple-xdr-display) (built-in) - provides full unlock for the entire brightness range with no strings attached - no clipped or overblown HDR videos, full native sliders compatibility, no extra CPU/GPU usage. *
+- Color mode selector and unexposed refresh rates for Apple Silicon Macs** - change RGB, YCbCr, chroma subsampling, HDMI range settings.
 - Display group and synchronization features - sync brightness and other image controls among multiple displays!
 - Display UI scale matching - synchronize display UI scale / resolution among multiple displays (recommended for displays with flexible scaling enabled). *
 - Layout protection - create and protect an adaptive display arrangement using anchor points for natural traversal among screens. *
 - Change the display's brightness, volume and colors via software and hardware (DDC) control using sliders, native or custom keyboard shortcuts!
+- Custom OSD styles with the option to bring back the classic OSD sytle on macOS Tahoe 26 reinterpreted for glass.
 - DDC auto-configuaration** - automatically detect and configure DDC capabilities. Requires the [latest v3.x version](https://github.com/waydabber/BetterDisplay/releases).
 - BetterDisplay is the only app currently with DDC control for all modern Macs (full DDC support for all Apple Silicon Macs including the M1 built-in HDMI ports, and 2018 mini built-in HDMI port).
 - Change display inputs using DDC on supported displays.
 - Option to auto-disconnect built-in screen upon connecting an external display - requires Apple Silicon (note: Settings/Displays/Overview/Connection management settings...). *
 - [Convert your internal and natively connected external displays to flexible-scaled HiDPI displays](https://github.com/waydabber/BetterDisplay/wiki/Fully-scalable-HiDPI-desktop) using flexbile scaling (displays with notch, HDR, HDCP, high refresh rate are all supported)! *
+- Video filters for PIP and local streaming. *
+- Apply filters directly to your screen using self-streaming and video filter windows. *
+- Control integration - control your device using shell scripts and URLs. *
 - Change the resolution easily with a slider!
 - Quickly accessible refresh rate and screen rotation menu.
 - Better quality zooming (`System Settings` > `Accessibility` > `Zoom`) or High Quality screenshots even on 1080p displays.

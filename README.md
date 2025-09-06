@@ -122,14 +122,10 @@ If you have any questions, search for answers under [Discussions](https://github
 
 ## Compatibility
 
-> [!NOTE] 
-> **Use the latest v4.x app version for full macOS Tahoe 26 support:** an updated version of the app—with enhanced compatibility and refreshed visuals—is [available](https://github.com/waydabber/BetterDisplay/releases). Tahoe users should upgrade to this version!
->
-> If you already have the app installed, enable **Settings > Application > Updates > Receive pre-release updates** and then check for updates to get the latest v4.x version.
-
-- The latest v3.x version of the app is compatible with all **Apple Silicon** and **Intel** Macs running macOS **Sequoia**, **Sonoma**, **Ventura** (13.2 or newer).
-- The latest stable v2.x version of the app supports macOS **Sonoma**, **Ventura** and **Monterey** (12.4 or newer).
-- The v1.x app version is compatible with macOS **Monterey**, **Big Sur**, **Catalina** and **Mojave**.
+- The current v4.x version of the app is compatible with all **Apple Silicon** and **Intel** Macs running **macOS Tahoe 26**, **Sequoia**, **Sonoma** and **Ventura** (13.2 or newer).
+- The v3.5.6 version of the app supports **macOS Sequoia**, **Sonoma** and **Ventura** (13.2 or newer).
+- The latest stable v2.3.9 version of the app supports **macOS Sonoma**, **Ventura** and **Monterey** (12.4 or newer).
+- The v1.4.5 app version is compatible with **macOS Monterey**, **Big Sur**, **Catalina** and **Mojave**.
 - XDR/HDR upscaling requires an Apple XDR display (built-in or external) or a natively connected external HDR display (VESA DisplayHDR 600 or higher recommended).
 - The display connect/disconnect feature requires an Apple Silicon Mac running at least macOS Ventura or an Intel Mac (all macOS versions supported - on Intel the feature is experimental only). External display sleep/suspend on disconnect is available only on Apple Silicon (on Intel, dimming or DDC backlight off is available for third party displays - backlight off works for Apple and built-in displays).
 - Flexible scaling requires macOS Monterey 12.4 (or newer) and natively connected displays. For Intel all macOS versions work.

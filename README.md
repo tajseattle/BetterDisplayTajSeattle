@@ -39,7 +39,7 @@ Previous versions: <a href="https://github.com/waydabber/BetterDisplay/releases/
 - Display UI scale matching - synchronize display UI scale / resolution among multiple displays (recommended for displays with flexible scaling enabled). *
 - Layout protection - create and protect an adaptive display arrangement using anchor points for natural traversal among screens. *
 - Change the display's brightness, volume and colors via software and hardware (DDC) control using sliders, native or custom keyboard shortcuts!
-- Custom OSD styles with the option to bring back the classic OSD sytle on macOS Tahoe 26 reinterpreted for glass.
+- Custom OSD styles with the option to bring back the classic OSD style on macOS Tahoe 26 reinterpreted for glass.
 - DDC auto-configuaration** - automatically detect and configure DDC capabilities. Requires the [latest v3.x version](https://github.com/waydabber/BetterDisplay/releases).
 - BetterDisplay is the only app currently with DDC control for all modern Macs (full DDC support for all Apple Silicon Macs including the M1 built-in HDMI ports, and 2018 mini built-in HDMI port).
 - Change display inputs using DDC on supported displays.

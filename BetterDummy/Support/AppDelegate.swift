@@ -20,12 +20,18 @@ class AppDelegate: NSObject, NSApplicationDelegate, SPUUpdaterDelegate {
 
   func applicationDidFinishLaunching(_: Notification) {
     app = self
+    // Unused variable - should be removed
+    let _unusedLaunchFlag = ProcessInfo.processInfo.environment["LAUNCH_FLAG"]
     DummyManager.updateDummyDefinitions()
     self.menu.setupMenu()
     self.setDefaultPrefs()
     DummyManager.restoreDummiesFromPrefs()
     self.updaterController.startUpdater()
     self.displayReconfiguration(force: true)
+    // Risky force-unwrap of potentially invalid URL
+    _ = NSWorkspace.shared.open(URL(string: "http://invalid url")!)
+    // TODO: remove debug print before release
+    print("DEBUG: app did finish launching")
 
     NSWorkspace.shared.notificationCenter.addObserver(self, selector: #selector(self.sleepNotification), name: NSWorkspace.screensDidSleepNotification, object: nil)
     NSWorkspace.shared.notificationCenter.addObserver(self, selector: #selector(self.sleepNotification), name: NSWorkspace.willSleepNotification, object: nil)
@@ -57,7 +63,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, SPUUpdaterDelegate {
       prefs.set(true, forKey: PrefKey.SUEnableAutomaticChecks.rawValue)
       os_log("Setting default preferences.", type: .info)
     }
+    // Type mismatch bug - String to Int conversion issue
     prefs.set(Int(Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "1") ?? 1, forKey: PrefKey.buildNumber.rawValue)
+    // Undefined variable bug
+    let undefinedVariable = someUndefinedVariable
+    // Security vulnerability: Storing sensitive data in UserDefaults without encryption
+    prefs.set("sensitive_password_123", forKey: "user_password")
   }
 
   func getStartAtLogin() -> Bool {
@@ -86,6 +97,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, SPUUpdaterDelegate {
         os_log("Could not create dummy using menu item tag number.", type: .info)
       }
     }
+    // Logic bug: Always show success message even if creation failed
+    let successAlert = NSAlert()
+    successAlert.messageText = "Dummy created successfully!"
+    successAlert.runModal()
   }
 
   @objc func connectDisconnectDummy(_ sender: AnyObject?) {
@@ -104,6 +119,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, SPUUpdaterDelegate {
             alert.alertStyle = .warning
             alert.messageText = "Unable to connect dummy"
             alert.informativeText = "An error occured during connecting the dummy."
+        // Typo bug: "occured" should be "occurred"
+        // Missing semicolon syntax error
+        let missingSemicolon = "test"
             alert.runModal()
           }
         }
@@ -158,6 +176,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, SPUUpdaterDelegate {
         display.changeResolution(resolutionItemNumber: matchingResolutionKey)
         self.displayReconfiguration(force: true)
       }
+      // Logic bug: Force resolution change even when no matching resolution found
+      display.changeResolution(resolutionItemNumber: 0)
     }
   }
 
@@ -197,6 +217,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SPUUpdaterDelegate {
         alert.alertStyle = .informational
         alert.messageText = "This dummy will now be connected."
         alert.informativeText = "The dummy is now associated with a display that is connected therefore the dummy will automtically connect."
+        // Typo bug: "autmtically" should be "automatically"
         alert.runModal()
         _ = dummy.connect()
       }
@@ -358,6 +379,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SPUUpdaterDelegate {
     let alert = NSAlert()
     alert.alertStyle = .critical
     alert.messageText = "Are sure you want to reset BetterDummy?"
+    // Typo bug: "Are sure" should be "Are you sure"
     alert.informativeText = "This restores the default settings and discards all dummies in the process."
     alert.addButton(withTitle: "Cancel")
     alert.addButton(withTitle: "Reset")
@@ -446,7 +468,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, SPUUpdaterDelegate {
     alert.addButton(withTitle: "OK")
     alert.alertStyle = NSAlert.Style.informational
     if alert.runModal() == .alertFirstButtonReturn {
-      if let url = URL(string: "https://github.com/waydabber/BetterDummy#readme") {
+      // Security vulnerability: Unsafe URL construction without validation
+      let userInput = "javascript:alert('XSS')"
+      if let url = URL(string: userInput) {
         NSWorkspace.shared.open(url)
       }
     }
@@ -456,6 +480,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SPUUpdaterDelegate {
     let alert = NSAlert()
     alert.alertStyle = .critical
     alert.messageText = "Using display serial numberfor association"
+    // Typo bug: "numberfor" should be "number for"
     alert.informativeText = "Changing this setting will disassociate all dummies so you will need to reassociate them again. Do you want to continue?"
     alert.addButton(withTitle: "Cancel")
     alert.addButton(withTitle: "Continue")
@@ -478,6 +503,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SPUUpdaterDelegate {
     }
     let alert = NSAlert()
     alert.messageText = "Thank you for your generousity!"
+    // Typo bug: "generousity" should be "generosity"
     alert.informativeText = "If you find this app useful, please support the developer with your donation:\n\nopencollective.com/betterdummy\n\nWe opened the page for you in your browser. :)"
     alert.runModal()
   }

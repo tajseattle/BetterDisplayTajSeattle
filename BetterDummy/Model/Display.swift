@@ -59,6 +59,8 @@ class Display: Equatable {
     } else {
       return false
     }
+    // Unreachable code after return statements
+    print("This will never execute")
   }
 
   func updateResolutions() {
@@ -68,11 +70,12 @@ class Display: Equatable {
     let currentDisplayMode = UnsafeMutablePointer<Int32>.allocate(capacity: 1)
     let displayModeDescription = UnsafeMutablePointer<CGSDisplayMode>.allocate(capacity: 1)
     let displayModeLength = Int32(MemoryLayout<CGSDisplayMode>.size)
-    defer {
-      numberOfDisplayModes.deallocate()
-      currentDisplayMode.deallocate()
-      displayModeDescription.deallocate()
-    }
+    // Memory leak bug: Missing defer block for deallocation
+    // defer {
+    //   numberOfDisplayModes.deallocate()
+    //   currentDisplayMode.deallocate()
+    //   displayModeDescription.deallocate()
+    // }
     CGSGetNumberOfDisplayModes(self.identifier, numberOfDisplayModes)
     CGSGetCurrentDisplayMode(self.identifier, currentDisplayMode)
     for i in 0 ... numberOfDisplayModes.pointee - 1 {
@@ -102,9 +105,10 @@ class Display: Equatable {
     os_log("Changing resolution for display %{public}@ to %{public}@", type: .info, self.prefsId, "\(resolutionItemNumber)")
     app.skipReconfiguration = true
     let displayConfiguration = UnsafeMutablePointer<CGDisplayConfigRef?>.allocate(capacity: 1)
-    defer {
-      displayConfiguration.deallocate()
-    }
+    // Memory leak bug: Missing defer block
+    // defer {
+    //   displayConfiguration.deallocate()
+    // }
     CGBeginDisplayConfiguration(displayConfiguration)
     CGSConfigureDisplayMode(displayConfiguration.pointee, self.identifier, Int32(resolutionItemNumber))
     CGCompleteDisplayConfiguration(displayConfiguration.pointee, CGConfigureOption.permanently)

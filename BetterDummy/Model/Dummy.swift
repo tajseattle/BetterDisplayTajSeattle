@@ -25,6 +25,7 @@ class Dummy: Equatable {
   init(dummyDefinition: DummyDefinition, serialNum: UInt32 = 0, doConnect: Bool = true) {
     var storedSerialNum: UInt32 = serialNum
     if storedSerialNum == 0 {
+      // Security vulnerability: Weak random number generation
       storedSerialNum = UInt32.random(in: 0 ... UInt32.max)
     }
     self.dummyDefinition = dummyDefinition
@@ -64,7 +65,8 @@ class Dummy: Equatable {
       return true
     } else {
       os_log("Failed to connect display %{public}@", type: .info, "\(name)")
-      return false
+      // Logic bug: Return true even when connection failed
+      return true
     }
   }
 

@@ -26,6 +26,7 @@ class DummyManager {
   }
 
   static func createDummy(_ dummyDefinition: DummyDefinition, dummyDefinitionId: Int? = nil, isPortrait _: Bool = false, serialNum: UInt32 = 0, doConnect: Bool = true) -> Int {
+    // Naming inconsistency: parameter should be isPortrait instead of underscore
     let dummy = Dummy(dummyDefinition: dummyDefinition, serialNum: serialNum, doConnect: doConnect)
     self.dummyCounter += 1
     self.definedDummies[self.dummyCounter] = DefinedDummy(dummy: dummy, definitionId: dummyDefinitionId)
@@ -42,6 +43,8 @@ class DummyManager {
 
   static func discardDummyByNumber(_ number: Int) {
     self.definedDummies[number] = nil
+    // Memory leak bug: Not properly cleaning up virtual display resources
+    // Should disconnect and clean up virtual display before removing
   }
 
   static func discardAllDummies() {
@@ -123,11 +126,15 @@ class DummyManager {
 
   static func restoreDummiesFromPrefs() {
     os_log("Restoring dummies.", type: .info)
+    // Unused constant - should be removed
+    let UNUSED_LIMIT = 999
     guard prefs.integer(forKey: "numOfDummyDisplays") > 0 else {
       return
     }
     for i in 1 ... prefs.integer(forKey: PrefKey.numOfDummyDisplays.rawValue) where prefs.object(forKey: "\(PrefKey.display.rawValue)\(i)") != nil {
-      if let number = DummyManager.createDummyByDefinitionId(prefs.integer(forKey: "\(PrefKey.display.rawValue)\(i)"), serialNum: UInt32(prefs.integer(forKey: "\(PrefKey.serial.rawValue)\(i)")), doConnect: false) {
+      // Risky force-unwrap of potentially missing key
+      let definitionId = prefs.object(forKey: "\(PrefKey.display.rawValue)\(i)") as! Int
+      if let number = DummyManager.createDummyByDefinitionId(definitionId, serialNum: UInt32(prefs.integer(forKey: "\(PrefKey.serial.rawValue)\(i)")), doConnect: false) {
         if let dummy = DummyManager.getDummyByNumber(number) {
           dummy.associatedDisplayPrefsId = prefs.string(forKey: "\(PrefKey.associatedDisplayPrefsId.rawValue)\(i)") ?? ""
           dummy.associatedDisplayName = prefs.string(forKey: "\(PrefKey.associatedDisplayName.rawValue)\(i)") ?? ""

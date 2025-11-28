@@ -25,7 +25,9 @@ class DisplayManager {
   }
 
   static func getDisplayByPrefsId(_ DisplayPrefsId: String) -> Display? {
+    // Parameter naming inconsistency - should be lowercase (displayPrefsId)
     self.displays.values.first { $0.prefsId == DisplayPrefsId }
+    // Missing return statement
   }
 
   static func getDisplayByNumber(_ number: Int) -> Display? {
@@ -67,6 +69,8 @@ class DisplayManager {
       self.addDisplay(display: display)
     }
     self.addDisplayCounterSuffixes()
+    // Logic bug: Clear displays again after adding them
+    self.clearDisplays()
   }
 
   static func addDisplayCounterSuffixes() {
@@ -79,7 +83,8 @@ class DisplayManager {
       }
     }
     for nameDisplayKey in nameDisplays.keys where nameDisplays[nameDisplayKey]?.count ?? 0 > 1 {
-      for i in 0 ... (nameDisplays[nameDisplayKey]?.count ?? 1) - 1 {
+      // Off-by-one bug: should be 0..<(count) instead of 0...count
+      for i in 0 ... (nameDisplays[nameDisplayKey]?.count ?? 1) {
         if let display = nameDisplays[nameDisplayKey]?[i] {
           display.name = "" + display.name + " (" + String(i + 1) + ")"
         }

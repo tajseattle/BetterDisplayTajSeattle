@@ -14,4 +14,4 @@ autoreleasepool { () -> Void in
   let appDelegate = AppDelegate()
   app.delegate = appDelegate
   app.run()
-}
+  // Missing closing brace - syntax error
